@@ -5,15 +5,21 @@ import MoonTunerPlayer from "./MoonTunerPlayer";
 // Replace these with your own uploads when ready.
 const IMAGES = {
   heroAbstract:
-    "https://d64gsuwffb70l.cloudfront.net/6947a6dc9aa5199de9319568_1766303499305_64dd5d38.png",
+    "https://drive.google.com/file/d/1PeH2v4n1z03Esux8zavLcUiNuliVlu1J/view?usp=sharing",
   portrait:
-    "https://d64gsuwffb70l.cloudfront.net/6947a6dc9aa5199de9319568_1766303893512_b0250198.jpeg",
+    "https://drive.google.com/file/d/1PeH2v4n1z03Esux8zavLcUiNuliVlu1J/view?usp=sharing",
   work1:
-    "https://d64gsuwffb70l.cloudfront.net/6947a6dc9aa5199de9319568_1766303497087_8e6d43dd.png",
+    "https://drive.google.com/file/d/1TZhgt5pB8YD_1WS2SgULzKus3_xFZ9l7/view?usp=sharing",
   work2:
-    "https://d64gsuwffb70l.cloudfront.net/6947a6dc9aa5199de9319568_1766303488073_2d54e1bb.png",
+    "https://drive.google.com/file/d/1YOkk_9x8comR9b4wIrZOLihTHbC5XWuz/view?usp=sharing",
   work3:
-    "https://d64gsuwffb70l.cloudfront.net/6947a6dc9aa5199de9319568_1766303493225_6328cbc5.png",
+    "https://drive.google.com/file/d/1HQ6lrYANaoGeRVZmqqIHZh1DjAI1pOnN/view?usp=sharing",
+  work4:
+    "https://drive.google.com/file/d/1oax3lC5osc2FhXoF1TloLCASqc0ZqLQg/view?usp=sharing",
+  work5:
+    "https://drive.google.com/file/d/1u0Sv2bOWv5pdDz7IkETVBs5N-OCz6J_B/view?usp=sharing",
+  work6:
+    
 };
 
 type Project = {
@@ -27,66 +33,66 @@ type Project = {
 };
 
 const projects: Project[] = [
+{
+  id: "sonic-identity-system",
+  title: "Sonic Identity System",
+  category: "Audio Strategy",
+  description:
+    "A systematic framework that treats sonic identity as infrastructure—translating brand values into audible qualities through core principles, constraint-based guidelines, and modular components that scale across touchpoints.",
+  tags: ["Brand architecture", "Guidelines", "Creative direction"],
+  status: "R&D",  // Consider changing to "R&D" or "Framework"
+  image: IMAGES.work1,
+},
   {
-    id: "sonic-identity-system",
-    title: "Sonic Identity System",
-    category: "Audio Strategy",
-    description:
-      "A scalable approach to defining how a brand sounds across touchpoints—principles, constraints, and behaviors teams can actually use.",
-    tags: ["Brand architecture", "Guidelines", "Creative direction"],
-    status: "Active",
-    image: IMAGES.work1,
-  },
-  {
-    id: "audio-ux-toolkit",
-    title: "Audio UX Toolkit",
-    category: "Product & Experience",
-    description:
-      "Design patterns for sound in interfaces: feedback, micro-interactions, accessibility, and restraint—built for modern platforms.",
-    tags: ["Web Audio", "Interaction design", "Accessibility"],
-    status: "In Progress",
-    image: IMAGES.work2,
-  },
-  {
-    id: "sonic-rnd-lab",
-    title: "Generative Audio R&D",
-    category: "Innovation",
-    description:
-      "Prototype-driven exploration: systems that generate coherent soundbeds from simple parameters—useful for concepting and rapid iteration.",
-    tags: ["Prototyping", "Systems", "Generative"],
-    status: "R&D",
-    image: IMAGES.work3,
-  },
-  {
-    id: "brand-sound-audit",
-    title: "Brand Sound Audit",
-    category: "Growth & Clarity",
-    description:
-      "A diagnostic framework for understanding what audio is already communicating—then aligning it to the brand’s intent and audience reality.",
-    tags: ["Audit", "Cultural insight", "Decision support"],
-    status: "Active",
-    image: IMAGES.work1,
-  },
-  {
-    id: "voice-persona-system",
-    title: "Voice Persona System",
-    category: "Innovation",
-    description:
-      "Exploration into how voice, tone, and sonic texture can be systematized—protecting brand integrity while enabling speed.",
-    tags: ["AI voice", "Governance", "Brand integrity"],
-    status: "R&D",
-    image: IMAGES.work2,
-  },
-  {
-    id: "spatial-experience",
-    title: "Spatial Experience Sketches",
-    category: "Product & Experience",
-    description:
-      "Concept work for environments where sound guides attention, mood, and movement—designed to feel inevitable, not loud.",
-    tags: ["Experience design", "Spatial audio", "Narrative"],
-    status: "In Progress",
-    image: IMAGES.work3,
-  },
+  id: "audio-ux-toolkit",
+  title: "Audio UX Toolkit",
+  category: "Product & Experience",
+  description:
+    "A pattern library for sound in digital interfaces—defining how feedback, micro-interactions, and accessibility constraints create coherent audio experiences across modern platforms.",
+  tags: ["Web Audio", "Interaction design", "Accessibility"],
+  status: "Framework",
+  image: IMAGES.work2,
+},
+{
+  id: "sonic-rnd-lab",
+  title: "Generative Audio R&D",
+  category: "Innovation",
+  description:
+    "Prototype-driven exploration of systems that generate coherent soundbeds from simple parameters—useful for rapid concepting, iteration, and alignment conversations.",
+  tags: ["Prototyping", "Systems", "Generative"],
+  status: "R&D",
+  image: IMAGES.work3,
+},
+{
+  id: "brand-sound-audit",
+  title: "Brand Sound Audit",
+  category: "Growth & Clarity",
+  description:
+    "A diagnostic methodology for understanding what audio is already communicating—then aligning it to brand intent, audience reality, and growth objectives.",
+  tags: ["Audit", "Cultural insight", "Decision support"],
+  status: "Framework",
+  image: IMAGES.work4,
+},
+{
+  id: "voice-persona-system",
+  title: "Voice Persona System",
+  category: "Innovation",
+  description:
+    "A framework for systematizing voice, tone, and sonic texture—protecting brand integrity while enabling speed and consistency across AI voice applications.",
+  tags: ["AI voice", "Governance", "Brand integrity"],
+  status: "R&D",
+  image: IMAGES.work5,
+},
+{
+  id: "spatial-experience",
+  title: "Spatial Experience Sketches",
+  category: "Product & Experience",
+  description:
+    "Conceptual approaches for environments where sound guides attention, mood, and movement—designed to feel inevitable rather than intrusive.",
+  tags: ["Experience design", "Spatial audio", "Narrative"],
+  status: "Concept",
+  image: IMAGES.work6,
+},
 ];
 
 const fieldNotes = [
@@ -281,7 +287,7 @@ const AppLayout: React.FC = () => {
 
             <div className="relative px-6 py-14 sm:px-10 sm:py-20">
               <div className="flex flex-wrap items-center gap-2">
-                {["Director-level", "Audio Strategy", "Brand Systems", "Creative Technology"].map((t) => (
+                {["Sonic Narratives", "Audio Strategy", "Brand Systems", "Creative Technology"].map((t) => (
                   <span
                     key={t}
                     className="rounded-full border border-black/10 bg-white/70 px-3 py-1 text-[11px] tracking-[0.22em] uppercase text-black/60"
@@ -549,7 +555,7 @@ const AppLayout: React.FC = () => {
               <div className="rounded-3xl border border-black/10 bg-white overflow-hidden">
                 <div className="divide-y divide-black/10">
                   {fieldNotes.map((n) => (
-                    <a
+                    <div
                       key={n.id}
                       href="#"
                       className="group block px-6 py-5 hover:bg-black/[0.02] transition"
@@ -561,7 +567,7 @@ const AppLayout: React.FC = () => {
                         </div>
                         <ArrowRight className="text-black/35 group-hover:text-black transition" size={18} />
                       </div>
-                    </a>
+                    </div>
                   ))}
                 </div>
               </div>
