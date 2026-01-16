@@ -19,7 +19,7 @@ const IMAGES = {
   work5:
     "https://drive.google.com/file/d/1u0Sv2bOWv5pdDz7IkETVBs5N-OCz6J_B/view?usp=sharing",
   work6:
-    
+    "https://drive.google.com/file/d/1SntGyUhHI97YCdVZ9-5KPJv99Um2iD_L/view?usp=sharing",
 };
 
 type Project = {
